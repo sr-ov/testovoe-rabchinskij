@@ -1,0 +1,15 @@
+$container_padding: 15;
+$container_width: 1130 + $container_padding * 2;
+$fz_base: 40;
+
+:root {
+	--fz-prim: #{$fz_base}px;
+	--c-prim: #090909;
+	--c-sec: #6a6a6a;
+	--c-acc: #ff6700;
+
+	--ff-prim: 'Roboto Flex';
+
+	--container-width: #{$container_width}px;
+	--container-padding: #{$container_padding}px;
+}

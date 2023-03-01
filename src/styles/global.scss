@@ -1,0 +1,25 @@
+body {
+	font-family: var(--ff-prim), sans-serif;
+	font-size: var(--fz-prim);
+	color: var(--c-prim);
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+	&--hidden {
+		overflow-x: hidden;
+	}
+
+	&__main {
+		flex: 1;
+	}
+}
+
+.container {
+	max-width: var(--container-width);
+	padding: 0 var(--container-padding);
+	margin: 0 auto;
+}
