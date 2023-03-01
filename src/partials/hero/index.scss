@@ -1,0 +1,14 @@
+.hero {
+	// .hero__content
+	&__content {
+		min-height: 100vh;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	// .hero__button
+	&__button {
+		font-size: clamp(45px, 15vw, 150px);
+	}
+}

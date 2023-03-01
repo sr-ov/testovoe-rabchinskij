@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
 
 @import 'styles/reset';
 @import 'styles/mixins';
@@ -8,6 +8,5 @@
 @import 'styles/vars';
 @import 'styles/global';
 
-@import 'partials/header';
-@import 'partials/footer';
-// @import 'partials/hero';
+@import 'partials/modal';
+@import 'partials/hero';

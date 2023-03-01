@@ -2,6 +2,7 @@ body {
 	font-family: var(--ff-prim), sans-serif;
 	font-size: var(--fz-prim);
 	color: var(--c-prim);
+	background-color: #fafafa;
 }
 
 .wrapper {
@@ -22,4 +23,20 @@ body {
 	max-width: var(--container-width);
 	padding: 0 var(--container-padding);
 	margin: 0 auto;
+}
+
+.button {
+	padding: 0.2em 0.5em;
+	border-radius: 0.2em;
+	background-color: var(--c-2);
+	color: var(--c-1);
+	transition: background-color 0.2s, color 0.2s;
+	line-height: 100%;
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: var(--c-1);
+			color: var(--c-2);
+		}
+	}
 }

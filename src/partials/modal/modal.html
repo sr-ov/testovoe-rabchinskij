@@ -1,0 +1,22 @@
+<section class="modal" data-target="modal" data-close="modal">
+	<div class="modal__content">
+		<div class="modal__top">
+			<div class="modal__info" id="info"></div>
+			<button class="modal__close" data-close="modal">&times;</button>
+		</div>
+		<form class="modal__form form" action="/" id="form">
+			<label class="form__item">
+				<input class="form__input" id="user-name" type="text" placeholder="Введите имя" name="userName">
+			</label>
+
+			<label class="form__item">
+				<input class="form__input" id="user-phone" type="text" placeholder="Введите телефон" name="userPhone" data-maska="+7 (###) ###-##-##">
+			</label>
+			<label class="form__item">
+				<textarea class="form__input form__input--msg" id="user-msg" placeholder="Введите сообщение" name="userMsg"></textarea>
+			</label>
+
+			<button class="form__submit button" type="submit">Отправить</button>
+		</form>
+	</div>
+</section>

@@ -1,0 +1,116 @@
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	min-height: 500px;
+	background-color: rgba(0, 191, 255, 0.9);
+	backdrop-filter: blur(2px);
+	z-index: 111;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px;
+	opacity: 0;
+	visibility: hidden;
+	transition-property: opacity, visibility;
+	transition-duration: 0.1s;
+	transition-delay: 0.2s;
+
+	&.active {
+		opacity: 1;
+		visibility: visible;
+		transition-delay: 0s;
+	}
+	&.active .modal__content {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+	// .modal__content
+	&__content {
+		border-radius: 8px;
+		background-color: var(--c-sec);
+		padding: 20px 30px 30px 30px;
+		max-width: 600px;
+		flex-grow: 1;
+		display: grid;
+		gap: 20px;
+		box-shadow: 0 0 0 3px var(--c-2);
+
+		transition-duration: 0.2s;
+		transition-delay: 0.1s;
+		transition-property: transform, opacity;
+		transform: translate(-50%, 0);
+		opacity: 0;
+
+		@media (max-width: /* width <= */ 576px) {
+			padding: 10px 20px 20px 20px;
+		}
+	}
+	// .modal__top
+	&__top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 20px;
+		color: var(--c-2);
+	}
+	// .modal__info
+	&__info {
+		&.error {
+			color: crimson;
+		}
+	}
+	// .modal__close
+	&__close {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 30px;
+		width: 30px;
+		font-size: 40px;
+		justify-self: end;
+		color: var(--c-2);
+	}
+	// .modal__form
+	&__form {
+	}
+}
+
+.form {
+	display: grid;
+	gap: 20px;
+	// .form__item
+	&__item {
+	}
+	// .form__input
+	&__input {
+		border-radius: 8px;
+		padding: 8px;
+		color: var(--c-2);
+		width: 100%;
+		outline: none;
+		transition: box-shadow 0.2s;
+
+		&:focus {
+			box-shadow: 0 0 0 3px var(--c-2);
+		}
+		&::placeholder {
+			transition: color 0.2s;
+			color: rgb(255, 228, 196, 0.6);
+		}
+		&:focus::placeholder {
+			color: transparent;
+		}
+	}
+	// .form__input--msg
+	&__input--msg {
+		resize: none;
+	}
+	// .form__submit
+	&__submit {
+		justify-self: center;
+		font-size: 40px;
+	}
+}

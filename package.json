@@ -22,6 +22,8 @@
 		"vite-plugin-svg-icons": "^2.0.1"
 	},
 	"dependencies": {
-		"alpinejs": "^3.10.2"
+		"alpinejs": "^3.10.2",
+		"just-validate": "^4.2.0",
+		"maska": "^2.1.7"
 	}
 }
